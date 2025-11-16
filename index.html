@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EducationMart | Your Learning Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+  <style>
+    .bg-hero {
+      background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.15)), url('https://images.unsplash.com/photo-1522199710521-72d69614c702?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=2a9a6f1a6d9d1a2c0a5a4c6b8f5f1f8a');
+      background-size: cover;
+      background-position: center;
+    }
+/* 
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px); 
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeInUp 1.2s ease-in-out forwards;
+    } */
+@keyframes fadeInUp
+ {0% {opacity: 0; transform: translateY(30px);}
+  100% {opacity: 1; transform:
+     translateY(0);}
+    }
+
+.fade-in { 
+  opacity: 0; 
+  animation: fadeInUp 1.2s ease-in-out forwards; 
+}
+
+html { scroll-behavior: smooth; }
+    @keyframes fadeText {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+    .animate-fadeText {
+      animation: fadeText 2.5s ease-in-out infinite;
+    }
+    </style>
+
+     
+    
+   
+
+
+</head>
+    
+
+
+<body class="bg-black text-gray-800 antialiased font-poppins">
+
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-24">
+        <div class="flex items-center gap-4">
+          <a href="#" class="flex items-center gap-3">
+            
+            <div class="flex items-center gap-3 cursor-pointer group">
+
+  <div class="w-14 h-14 rounded-full bg-gradient-to-br from-indigo-600 to-purple-900 flex items-center justify-center shadow-md group-hover:scale-110 transition-all duration-300">
+    <span class="text-fuchsia-950 text-2xl font-bold font-poppins tracking-wide">MS</span>
+  </div>
+
+  
+  <h1 class="text-xl font-semibold text-gray-900 group-hover:text-indigo-600 transition-all duration-300">Minhaj Siddiqui</h1>
+  
+</div>
+            
+       
+        <div class="hidden md:flex items-center gap-6">
+          <a href="#about" class="hover:text-white">About</a>
+          <a href="#projects" class="hover:text-white">Projects</a>
+          <a href="#skills" class="hover:text-white">Skills</a>
+          <a href="#contact" class="hover:text-white">Contact</a>
+
+          
+          <div class="relative">
+            <input id="search" type="search"placeholder="Search projects..." class="pl-10 pr-4 py-2 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-mustard" />
+            <svg class="w-5 h-5 absolute left-3 top-2.5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1116.65 16.65z"/></svg>
+          </div>
+
+          <a href="#contact" class="ml-2 inline-block px-5 py-2 bg-white text-black rounded-md shadow-sm hover:scale-110 ">Hire Me</a>
+        </div>  
+    </nav>
+
+    <!-- Mobile menu panel -->
+    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+      <div class="flex flex-col gap-2">
+        <a href="#about" class="block py-2">About</a>
+        <a href="#projects" class="block py-2">Projects</a>
+        <a href="#skills" class="block py-2">Skills</a>
+        <a href="#contact" class="block py-2">Contact</a>
+        <input id="mobileSearch" type="search" placeholder="Search projects..." class="mt-2 pl-3 py-2 rounded-md border border-gray-100 text-gray-100" />
+      </div>
+    </div>
+  </header>
+
+
+  <section class="bg-hero text-white">
+       <div class="bg-[url('pbg2.jpg')] h-[800px] bg-no-repeat m-0   rounded-2xl bg-cover bg-center">
+ 
+    
+    <div class="max-w-6xl mx-auto px-4 py-20 sm:py-28 lg:py-36 ">
+      <div class="md:flex md:items-center md:gap-12 ">
+        <div class="md:flex-1 ">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight  fade-in">Hi, I'm <span class="text-indigo-500">Minhaj</span> — Frontend Developer & Web Designer</h1>
+          <p class="mt-6 max-w-xl text-lg text-white/90  fade-in">I turn ideas into responsive products. I specialize in HTML, Tailwind CSS, and JavaScript with focus on performance & accessibility.</p>
+
+          <div class="mt-8 flex gap-4  fade-in ">
+            <a href="#projects" class="inline-block px-5 py-3 bg-white text-gray-800 rounded-md shadow animate-fadeText">View Projects</a>
+            <a href="#contact" class="inline-block px-5 py-3 border border-white/30 rounded-md animate-fadeText">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="mt-8 md:mt-0 md:w-80 lg:w-96">
+          <img src="profile2.jpg" alt="profile" class="w-[900px] h-[600px] object-cover rounded-4xl shadow-lg" />
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  
+  <section id="about" class="py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold  text-white">About Me</h2>
+      <p class="mt-4 text-white">I am a passionate Frontend Developer & Web Designer who enjoys creating clean, modern, and responsive user interfaces. I love learning new technologies and continuously improving my skills. My goal is to build digital experiences that are fast, attractive, and user‑friendly. I work with HTML, Tailwind CSS, and vanilla JavaScript to build performant sites that look great on all devices.</p>
+
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="font-bold">Experience</h3>
+          <p class="mt-2 text-sm text-gray-600">Currently learning and gaining hands‑on experience in modern frontend development.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="font-bold">Education</h3>
+          <p class="mt-2 text-sm text-gray-600"><span class="font-bold"> Intermediate. </span>from Khursheed Begum Girls Degree College</p>
+          <p class="mt-2 text-sm text-gray-600"><span class="font-bold"> Intermediate. </span>from Khursheed Begum Girls Degree College</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="font-bold">Hobbies</h3>
+          <p class="mt-2 text-sm text-gray-600">Design, Photography, Reading, Writing, Coding, Travelling</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="projects" class="py-16 bg-gray-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-2xl font-bold">Projects</h2>
+        <p id="resultsCount" class="text-sm text-gray-500">Showing all projects</p>
+      </div>
+
+      <div id="projectsGrid" class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+ 
+        <article class="p-5 bg-white rounded-lg shadow-xl hover:scale-105 transition duration-300" data-title="Portfolio Website">
+          <img src="project 1.jpeg" alt="proj1" class="w-full h-40 object-cover rounded" />
+          <h3 class="mt-4 font-semibold">Portfolio Website</h3>
+          <p class="mt-2 text-sm text-gray-600">A personal portfolio built with HTML, Tailwind CSS and JavaScript .</p>
+          <div class="mt-4 flex gap-2">
+            <a href="#" class="text-sm underline">Live</a>
+            <a href="#" class="text-sm underline">Code</a>
+          </div>
+        </article>
+
+        <article class="p-5 bg-white rounded-lg shadow-xl hover:scale-105 transition duration-300" data-title="Ecommerce UI">
+          <img src="project 2.jpeg" alt="proj2" class="w-full h-40 object-cover rounded" />
+          <h3 class="mt-4 font-semibold">Ecommerce UI</h3>
+          <p class="mt-2 text-sm text-gray-600">A clean product listing and checkout flow UI.</p>
+          <div class="mt-4 flex gap-2">
+            <a href="#" class="text-sm underline">Live</a>
+            <a href="#" class="text-sm underline">Code</a>
+          </div>
+        </article>
+
+        <article class="p-5 bg-white rounded-lg shadow-xl hover:scale-105 transition duration-300" data-title="Blog Template">
+          <img src="project 3.jpeg" alt="proj3" class="w-full h-40 object-cover rounded" />
+          <h3 class="mt-4 font-semibold">Landing Page Template</h3>
+          <p class="mt-2 text-sm text-gray-600">A responsive Landing page template.</p>
+          <div class="mt-4 flex gap-2">
+            <a href="#" class="text-sm underline">Live</a>
+            <a href="#" class="text-sm underline">Code</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="skills" class="py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold text-gray-300">Skills</h2>
+      <div class="mt-6 flex flex-wrap gap-3 justify-center">
+        <span class="px-3 py-1 bg-white rounded-full shadow text-sm">HTML</span>
+        <span class="px-3 py-1 bg-white rounded-full shadow text-sm">CSS</span>
+        <span class="px-3 py-1 bg-white rounded-full shadow text-sm">JavaScript</span>
+        <span class="px-3 py-1 bg-white rounded-full shadow text-sm">Tailwind CSS</span>
+        <span class="px-3 py-1 bg-white rounded-full shadow text-sm">PHP</span>
+        <span class="px-3 py-1 bg-white rounded-full shadow text-sm">MYSQL</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 bg-gray-800">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center text-white">Contact Me</h2>
+      <form  action=""class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4" onsubmit="handleContact(event)">
+        <input required name="name" placeholder="Your name" class="col-span-1 sm:col-span-1 p-3 rounded-md border border-gray-200" />
+        <input required type="email" name="email" placeholder="Email" class="col-span-1 sm:col-span-1 p-3 rounded-md border border-gray-200" />
+        <input name="subject" placeholder="Subject" class="col-span-1 sm:col-span-2 p-3 rounded-md border border-gray-200" />
+        <textarea name="message" rows="4" placeholder="Message" class="col-span-1 sm:col-span-2 p-3 rounded-md border border-gray-200"></textarea>
+        <div class="col-span-1 sm:col-span-2 text-right">
+          <button type="submit" class="px-5 py-3 bg-amber-400 hover:scale-90 text-white rounded-md">Send Message</button>
+        </div>
+      </form>
+
+      <p id="contactMsg" class="mt-4 text-sm text-green-200 hidden">Message sent (demo).</p>
+    </div>
+  </section>
+
+  <footer class="py-6 text-center text-sm text-gray-200">
+    © <span id="year"></span> MY Portfolio — @MINHAJ SIDDDIQUI
+  </footer>
+
+  <script>
+ 
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+
+    const mobileBtn = document.getElementById('mobileBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+   
+    const search = document.getElementById('search');
+    const mobileSearch = document.getElementById('mobileSearch');
+    const projectsGrid = document.getElementById('projectsGrid');
+    const resultsCount = document.getElementById('resultsCount');
+
+    function filterProjects(q){
+      const cards = Array.from(projectsGrid.querySelectorAll('article'));
+      const text = (q||'').trim().toLowerCase();
+      let shown = 0;
+      cards.forEach(card => {
+        const title = card.dataset.title.toLowerCase();
+        if(!text || title.includes(text)){
+          card.style.display = '';
+          shown++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      resultsCount.textContent = shown === cards.length ? 'Showing all projects' : `Found ${shown} project${shown!==1?'s':''}`;
+    }
+
+    search && search.addEventListener('input', (e)=> filterProjects(e.target.value));
+    mobileSearch && mobileSearch.addEventListener('input', (e)=> filterProjects(e.target.value));
+
+    
+    function handleContact(e){
+      e.preventDefault();
+      const msgEl = document.getElementById('contactMsg');
+      msgEl.classList.remove('hidden');
+      msgEl.textContent = 'Message sent — this is a demo (no backend).';
+      setTimeout(()=> msgEl.classList.add('hidden'), 4000);
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
+
